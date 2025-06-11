@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://gcore.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    /* colors */
+    --gray-800: #675a54;
+    --yellow: #FFDD9D;
+    --lightBlue: #A8D1E7;
+    --mistyRose: #FEE5E0;
+}
+h1{
+    color: var(--gray-800);
+text-align: center;
+font-family: HS-Regular;
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -2.88px;
+}
+
+h2{
+color: var(--gray-800);
+font-family: "Cafe24Ssurround";
+font-size: 33px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+h3{
+    color: var(--gray-800);
+font-family: 'Cafe24Ssurround';
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+h4{
+    color: var(--gray-800);
+text-align: center;
+font-family: 'Cafe24SsurroundAir';
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+align-content: center;
+}
+
+
+header {
+
+    display: flex;
+height: 88px;
+justify-content: center;
+align-items: center;
+border-radius: 0px 0px 30px 30px;
+border-right: 3px solid var(--gray-800);
+border-bottom: 3px solid var(--gray-800);
+border-left: 3px solid var(--gray-800);
+background: var(--yellow);
+margin-bottom: 64px;
+}
+
+.cardzone {
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 24px;
+align-self: stretch;
+margin-bottom: 8px;
+}
+
+.draw-card {
+    width: 170px;
+    height: 264px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 13px;
+    overflow: hidden;
+    border: 3px solid var(--gray-800);
+}
+
+.draw-image {
+    width: 100%;
+    height: 220px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.draw-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 이미지가 영역 꽉 채우게 */
+}
+
+
+.draw-label {
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    background-color: var(--lightBlue);
+    color: var(--gray-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 3px solid var(--gray-800);
+}
+
+.timer-zone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 64px;
+}
+
+.timer-box{
+  display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    border-radius: 15px;
+    border: 3px solid var(--gray-800);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.timer-text{
+display: flex;
+width: 167px;
+height: 100%;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-right: 3px solid var(--gray-800);
+background: var(--lightBlue);
+}
+.timer-num{
+    display: flex;
+width: 194px;
+height: 100%;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+border-radius: 0px 15px 15px 0px;
+background: #FFF;
+}
+
+.user-zone{
+    display: flex;
+justify-content: center;
+align-items: center;
+align-content: center;
+gap: 8px 24px;
+align-self: stretch;
+flex-wrap: wrap;
+margin-bottom: 8px;
+}
+
+.user-box{
+    display: flex;
+width: 170px;
+height: 48px;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+border-radius: 15px;
+border: 3px solid var(--gray-800);
+background: var(--mistyRose);
+overflow: hidden;
+}
+
+.user-box h2{
+    padding-top: 5px;
+}
+
+.user-name{
+display: flex;
+height: 44px;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex: 1 0 0;
+background: var(--mistyRose);
+}
+
+.user-score{
+    display: flex;
+height: 44px;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex: 1 0 0;
+border-left: 3px solid var(--gray-800);
+background: #FFF;
+}
+
+footer{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 24px;
+align-self: stretch;
+margin-bottom: 40px;
+}
+
+.next{
+    display: flex;
+width: 364px;
+height: 64px;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 15px;
+border: 3px solid var(--gray-800);
+background: var(--mistyRose);
+}
+
+#game-end{
+    display: flex;
+width: 170px;
+height: 48px;
+box-sizing: border-box;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 15px;
+border: 3px solid var(--gray-800);
+background: var(--yellow);
+text-decoration-line: none;
+}
+
+.queen-bg {
+    height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(img/youAreLilyQueen.jpg) center center / cover no-repeat;
+            overflow: hidden;
+}
+
+.queen-bg h1 {
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+            line-height: 1.4;
+            max-width: 90%;
+            word-break: keep-all;
+}

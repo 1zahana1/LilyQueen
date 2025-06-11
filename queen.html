@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>절대 백합 신</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body class="queen-bg">
+    <h1>User1님은<br />절대 백합 신이 되어<br />영원히 기억될 것입니다.</h1>
+
+    <script>
+      // URL에서 쿼리스트링 읽어오기
+      function getWinnerFromQuery() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get("winner");
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const winnerName = getWinnerFromQuery();
+
+        // .queen-bg h1 안에 문구 넣기
+        document.querySelector(".queen-bg h1").innerHTML = `
+                ${winnerName}님은<br>절대 백합 신이 되어<br>영원히 기억될 것입니다.
+            `;
+      });
+    </script>
+  </body>
+</html>
