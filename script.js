@@ -10,7 +10,15 @@ const gongImages = [
   { name: "재벌공", src: "img/rich.jpg" },
   { name: "외계인공", src: "img/alien.jpg" },
   { name: "과학자공", src: "img/scientist.jpg" },
-  { name: "조폭공", src: "img/gang.jpg" }
+  { name: "조폭공", src: "img/gang.jpg" },
+  { name: "삼국지충공", src: "img/samgookji.jpg" },
+  { name: "헬창공", src: "img/health.jpg" },
+  { name: "얀데레공", src: "img/yan.jpg" },
+  { name: "분조장공", src: "img/rage.jpg" },
+  { name: "히키코모리공", src: "img/hiki.jpg" },
+  { name: "도믿걸공", src: "img/domit.jpg" },
+  { name: "야노충공", src: "img/yano.jpg" },
+  { name: "돼지국밥공", src: "img/gookbob.jpg" }
 ];
 
 
@@ -26,7 +34,15 @@ const sooImages = [
   { name: "재벌수", src: "img/rich.jpg" },
   { name: "외계인수", src: "img/alien.jpg" },
   { name: "과학자수", src: "img/scientist.jpg" },
-  { name: "조폭수", src: "img/gang.jpg" }
+  { name: "조폭수", src: "img/gang.jpg" },
+  { name: "삼국지충수", src: "img/samgookji.jpg" },
+  { name: "헬창수", src: "img/health.jpg" },
+  { name: "얀데레수", src: "img/yan.jpg" },
+  { name: "분조장수", src: "img/rage.jpg" },
+  { name: "히키코모리수", src: "img/hiki.jpg" },
+  { name: "도믿걸수", src: "img/domit.jpg" },
+  { name: "야노충수", src: "img/yano.jpg" },
+  { name: "돼지국밥수", src: "img/gookbob.jpg" }
 ];
 
 function setupDrawCard(cardSelector, images) {
